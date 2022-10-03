@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUi
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
-import lpc_hmm as new_method
+import lpc_hmm_matematika as new_method
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -53,7 +53,6 @@ class editwindow(QWidget):
             os.system(r'cmd /c "start C:\Users\chondroseto\Desktop\Gmail"')
         elif label_predict == 'bahasa inggris':
             os.system(r'cmd /c "start C:\Users\chondroseto\Desktop\Gmail"')
-
 
         #self.close()
 

@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUi
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
-import lpc_hmm as new_method
+import lpc_hmm_inggris as new_method
 import matplotlib.pyplot as plt
 import numpy as np
 

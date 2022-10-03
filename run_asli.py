@@ -170,7 +170,6 @@ class AudioProc(QMainWindow):
             self.info_tests.setHidden(True)
             self.info_output.setHidden(True)
 
-
 if __name__=='__main__':
     app=QApplication(sys.argv)
     window=AudioProc()
