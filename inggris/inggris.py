@@ -49,6 +49,11 @@ class editwindow(QWidget):
             os.system(r'cmd /c "start C:\Users\chondroseto\Desktop\Whatsapp"')
         elif label_predict == 'bahasa inggris':
             os.system(r'cmd /c "start C:\Users\chondroseto\Desktop\Gmail"')
+        elif label_predict == 'bahasa inggris':
+            os.system(r'cmd /c "start C:\Users\chondroseto\Desktop\Gmail"')
+        elif label_predict == 'bahasa inggris':
+            os.system(r'cmd /c "start C:\Users\chondroseto\Desktop\Gmail"')
+
 
         #self.close()
 
@@ -140,7 +145,10 @@ class AudioProc(QMainWindow):
                     os.system(r'cmd /c "start C:\Users\chondroseto\Desktop\Whatsapp"')
                 elif label_predict == 'bahasa inggris':
                     os.system(r'cmd /c "start C:\Users\chondroseto\Desktop\Gmail"')
-
+                elif label_predict == 'bahasa inggris':
+                    os.system(r'cmd /c "start C:\Users\chondroseto\Desktop\Gmail"')
+                elif label_predict == 'bahasa inggris':
+                    os.system(r'cmd /c "start C:\Users\chondroseto\Desktop\Gmail"')
 
     @pyqtSlot()
     def app_btn_clicked(self):
