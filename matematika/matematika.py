@@ -62,47 +62,51 @@ class AudioProc(QMainWindow):
 
         super(AudioProc,self).__init__()
         loadUi('gui.ui',self)
+
+        # Function Declaration
         self.train_btn.clicked.connect(self.train_btn_clicked)
         self.record_btn.clicked.connect(self.record_btn_clicked)
         self.test_btn.clicked.connect(self.test_btn_clicked)
         self.app_btn.clicked.connect(self.app_btn_clicked)
         self.help_btn.clicked.connect(self.help_btn_clicked)
 
+        # UI Output
         self.result_label = QLabel(self)
         self.result_label.setStyleSheet("border : 1px solid black;")
         self.result_label.setAlignment(Qt.AlignCenter)
-        self.result_label.move(230, 150)
-        self.result_label.resize(90,30)
+        self.result_label.move(150, 150)
+        self.result_label.resize(90, 30)
         self.result_label.setText("Output")
 
+        # Help UI Show
         self.info_train = QLabel(self)
-        self.info_train.move(325, 25)
+        self.info_train.move(250, 25)
         self.info_train.resize(200, 30)
-        self.info_train.setText("<-- Tombol training data suara")
+        self.info_train.setText("<- Training Data Suara")
         self.info_train.setHidden(True)
 
         self.info_record = QLabel(self)
-        self.info_record.move(325, 55)
+        self.info_record.move(250, 55)
         self.info_record.resize(500, 30)
-        self.info_record.setText("<-- Tombol record dan test suara")
+        self.info_record.setText("<- Record dan Test Suara")
         self.info_record.setHidden(True)
 
         self.info_test = QLabel(self)
-        self.info_test.move(325, 85)
+        self.info_test.move(250, 85)
         self.info_test.resize(500, 30)
-        self.info_test.setText("<-- Tombol load file suara dan test file suara")
+        self.info_test.setText("<- Load dan Test File Suara")
         self.info_test.setHidden(True)
 
         self.info_tests = QLabel(self)
-        self.info_tests.move(325, 120)
+        self.info_tests.move(250, 115)
         self.info_tests.resize(200, 30)
-        self.info_tests.setText("<-- Tombol load semua file suara dan \n       test semua file suara")
+        self.info_tests.setText("<- Test All")
         self.info_tests.setHidden(True)
 
         self.info_output = QLabel(self)
-        self.info_output.move(325, 150)
+        self.info_output.move(250, 150)
         self.info_output.resize(200, 30)
-        self.info_output.setText("<-- Tempat hasil deteksi akan tampil")
+        self.info_output.setText("<- Result Detection")
         self.info_output.setHidden(True)
 
     @pyqtSlot()
@@ -178,6 +182,6 @@ class AudioProc(QMainWindow):
 if __name__=='__main__':
     app=QApplication(sys.argv)
     window=AudioProc()
-    window.setWindowTitle('Virtual Assisten')
+    window.setWindowTitle('Virtual Assisten Matematika')
     window.show()
     sys.exit(app.exec_())
