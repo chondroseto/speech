@@ -12,7 +12,7 @@ class MainProg(QMainWindow):
         self.btnFsk.clicked.connect(self.btnFsk_clicked)
         self.btnMtk.clicked.connect(self.btnMtk_clicked)
         self.btnIng.clicked.connect(self.btnIng_clicked)
-
+        self.btnSetting.clicked.connect(self.btnSetting_clicked)
 
     @pyqtSlot()
     def btnFsk_clicked(self):
@@ -25,6 +25,10 @@ class MainProg(QMainWindow):
     @pyqtSlot()
     def btnIng_clicked(self):
         os.system('python inggris/inggris.py')
+
+    @pyqtSlot()
+    def btnSetting_clicked(self):
+        os.system('python setting/setting.py')
 
 if __name__=='__main__':
     app=QApplication(sys.argv)
