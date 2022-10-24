@@ -36,8 +36,6 @@ class AudioProc(QMainWindow):
         elif label_predict == 'Present Continouse Tense':
             os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
 
-
-
 if __name__=='__main__':
     app=QApplication(sys.argv)
     window=AudioProc()

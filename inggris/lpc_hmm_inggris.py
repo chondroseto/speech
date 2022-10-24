@@ -4,8 +4,6 @@ import pyaudio
 import scipy.io.wavfile as wav
 import pickle
 import audiolazy.lazy_lpc as method
-from hmmlearn.hmm import GaussianHMM as hmm
-#import data_processing as dp
 
 
 def initialize(inputWav):
@@ -21,76 +19,6 @@ def preEmphasis(wav):
     emphasizedSignal = lowPassFilter(signal)
     return emphasizedSignal, signal, rate
 
-
-def lpc_hmm_uji_one(fname):
-    scr_value = []
-    print('========================================test========================================')
-    for i in range(1):
-        i = i + 1
-
-        print(fname)
-
-        if fname.find('fisika')>-1:
-            label_actual = 'fisika'
-        elif fname.find('matematika') > -1:
-            label_actual = 'matematika'
-        elif fname.find('inggris') > -1:
-            label_actual = 'bahasa inggris'
-        else:
-            label_actual = 'undetected'
-
-        print('actual label = ',label_actual)
-
-        emphasizedSignal, signal, rate= preEmphasis(fname)
-        filt = method.lpc(emphasizedSignal,8)
-        lpc_features = filt.numerator[1:]
-        lpc_refeatures = np.reshape(lpc_features, (-1, 1))  # reshape reshape to matrix
-
-        max_score = -float("inf")
-        max_label = 0
-
-        for j in range(540):
-            j = j + 1
-
-            model = pickle.load(open("code/umum/model_hmm/model_"+ str(j) + ".pkl", 'rb'))
-
-            scr = model.score(lpc_refeatures) #method score menggunakan algorithm="forward"
-            scr_value.append(scr)
-            if scr > max_score:
-                max_score = scr
-                max_label = j
-
-        if (max_label>=1)and(max_label<=25):
-            label_predict = 'fisika'
-        elif (max_label>=26)and(max_label<=50):
-            label_predict = 'matematika'
-        elif (max_label>=51)and(max_label<=75):
-            label_predict = 'bahasa inggris'
-        elif (max_label>=76)and(max_label<=100):
-            label_predict = 'bahasa inggris'
-        elif (max_label>=101)and(max_label<=125):
-            label_predict = 'bahasa inggris'
-
-        if label_actual==label_predict:
-            status = 'detected'
-        else:
-            status = 'undetected'
-
-
-        if signal <= 780:
-            result = 'file suara kurang jelas suaranya sehingga tidak dapat di deteksi'
-            label_predict = ""
-        elif label_actual == 'undetected':
-            result = 'data suara tidak ada pada database'
-            label_predict = ''
-        else:
-            print("predicted data -", str(max_label), " label = ", label_predict, " status = ", status)
-            result = "predicted data -" + str(max_label) + " label = " + label_predict + " status = " + status
-            #print("mean : ", mean)
-            print("Max Score : ", max_score)
-            # print("All Score : ",scr_value)
-
-    return result,label_actual,label_predict,status
 
 def record(namefile):
     print('========================================record========================================')
@@ -182,8 +110,8 @@ def record(namefile):
         #result = 'suara kurang jelas suaranya sehingga tidak dapat di deteksi'
         #label_predict = ""
     #else:
-        print("predicted data -", str(max_label), " label = ", label_predict)
-        result = "predicted data -" + str(max_label) + " label = " + label_predict
+        #print("predicted data -", str(max_label), " label = ", label_predict)
+        #result = "predicted data -" + str(max_label) + " label = " + label_predict
 
     #print(result)
     print("predicted data -", str(max_label), " label = ", label_predict)

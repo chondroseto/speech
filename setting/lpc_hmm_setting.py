@@ -5,7 +5,6 @@ import scipy.io.wavfile as wav
 import pickle
 import audiolazy.lazy_lpc as method
 from hmmlearn.hmm import GaussianHMM as hmm
-#import data_processing as dp
 
 
 def initialize(inputWav):
