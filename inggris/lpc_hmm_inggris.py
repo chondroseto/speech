@@ -178,15 +178,16 @@ def record(namefile):
         #mean, freqz = dp.spectral_statistics(signal, rate)
         #print("mean : ", mean)
 
-    #if signal <= 780:
-        #result = ' suara kurang jelas suaranya sehingga tidak dapat di deteksi'
+    #if signal <= 400:
+        #result = 'suara kurang jelas suaranya sehingga tidak dapat di deteksi'
         #label_predict = ""
     #else:
-        #print("predicted data -", str(max_label), " label = ", label_predict)
-        #result = "predicted data -" + str(max_label) + " label = " + label_predict
+        print("predicted data -", str(max_label), " label = ", label_predict)
+        result = "predicted data -" + str(max_label) + " label = " + label_predict
 
+    #print(result)
     print("predicted data -", str(max_label), " label = ", label_predict)
-    result='detected'
-    return result, label_predict
+    #result='detected'
+    return label_predict
 
 
