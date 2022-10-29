@@ -27,15 +27,20 @@ class AudioProc(QMainWindow):
         QMessageBox.show(self)
 
         if label_predict == 'Test':
-            os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
+            #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
+            subprocess.call('start ig.jpg', shell=True)
         elif label_predict == 'Verb':
-            os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
+            #os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
+            subprocess.call('start ig.jpg', shell=True)
         elif label_predict == 'Pronoun':
-            os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
+            #os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
+            subprocess.call('start ig.jpg', shell=True)
         elif label_predict == 'Comparison':
-            os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
+            #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
+            subprocess.call('start ig.jpg', shell=True)
         elif label_predict == 'Present Continouse Tense':
-            os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
+            #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
+            subprocess.call('start ig.jpg', shell=True)
 
     @pyqtSlot()
     def exitBtn_clicked(self):

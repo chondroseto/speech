@@ -1,5 +1,0 @@
-test(1-5)
-verb(6-10)
-pronoun(11-15)
-comparison(16-20)
-presentcontinousetense(21-25)

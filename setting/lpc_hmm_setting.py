@@ -23,9 +23,9 @@ def preEmphasis(wav):
 
 def lpc_hmm_train():
     print('========================================train========================================')
-    for i in range(25):
+    for i in range(6):
         i = i + 1
-        audio = 'data/training_english/_(' + str(i) + ').wav'
+        audio = 'data_training/_ (' + str(i) + ').wav'
 
         emphasizedSignal, signal, rate= preEmphasis(audio)
         filt = method.lpc(emphasizedSignal, 8)
@@ -35,7 +35,7 @@ def lpc_hmm_train():
         #print('LPC Reshape Feature ke -', i, ' = ', lpc_refeatures)
         model = hmm(n_iter=10).fit(lpc_refeatures)  #hmm default
 
-        with open("data/model_english/model_"+ str(i) + ".pkl", "wb") as file: pickle.dump(model, file)
+        with open("model_training/model_"+ str(i) + ".pkl", "wb") as file: pickle.dump(model, file)
         print('Create model and save model as model_',str(i))
     return lpc_features
 
