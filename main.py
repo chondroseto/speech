@@ -4,15 +4,16 @@ from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUi
 from PyQt5.QtCore import *
 
-class MainProg(QMainWindow):
+class Main(QMainWindow):
     def __init__(self):
 
-        super(MainProg,self).__init__()
+        super(Main,self).__init__()
         loadUi('main.ui',self)
         self.btnFsk.clicked.connect(self.btnFsk_clicked)
         self.btnMtk.clicked.connect(self.btnMtk_clicked)
         self.btnIng.clicked.connect(self.btnIng_clicked)
-        self.btnSetting.clicked.connect(self.btnSetting_clicked)
+        self.exitBtn.clicked.connect(self.exitBtn_clicked)
+        #self.btnSetting.clicked.connect(self.btnSetting_clicked)
 
     @pyqtSlot()
     def btnFsk_clicked(self):
@@ -27,12 +28,12 @@ class MainProg(QMainWindow):
         os.system('python inggris/inggris.py')
 
     @pyqtSlot()
-    def btnSetting_clicked(self):
-        os.system('python setting/setting.py')
+    def exitBtn_clicked(self):
+        sys.exit(app.exec_())
 
 if __name__=='__main__':
     app=QApplication(sys.argv)
-    window=MainProg()
-    window.setWindowTitle('Virtual Assisten')
+    window=Main()
+    #window.setWindowTitle('Virtual Assisten')
     window.show()
     sys.exit(app.exec_())

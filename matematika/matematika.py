@@ -10,12 +10,11 @@ class AudioProc(QMainWindow):
     def __init__(self):
 
         super(AudioProc,self).__init__()
-        loadUi('core.ui',self)
+        loadUi('virtualassistant.ui',self)
 
         # Function Declaration
         self.record_btn.clicked.connect(self.record_btn_clicked)
-
-
+        self.exitBtn.clicked.connect(self.exitBtn_clicked)
 
     @pyqtSlot()
     def record_btn_clicked(self):
@@ -38,10 +37,13 @@ class AudioProc(QMainWindow):
         elif label_predict == 'Present Continouse Tense':
             os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
 
+    @pyqtSlot()
+    def exitBtn_clicked(self):
+        sys.exit(app.exec_())
 
 if __name__=='__main__':
     app=QApplication(sys.argv)
     window=AudioProc()
-    window.setWindowTitle('Virtual Assisten Matematika')
+    #window.setWindowTitle('Virtual Assisten Matematika')
     window.show()
     sys.exit(app.exec_())
