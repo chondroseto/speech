@@ -4,6 +4,7 @@ import pyaudio
 import scipy.io.wavfile as wav
 import pickle
 import audiolazy.lazy_lpc as method
+from datetime import date
 
 
 def initialize(inputWav):
@@ -115,6 +116,12 @@ def record(namefile):
 
     #print(result)
     print("predicted data -", str(max_label), " label = ", label_predict)
+    today = date.today()
+    print("Today date is: ", today)
+    day = today
+    lines = [str(day), "predicted data -", str(max_label), " label = ", label_predict]
+    with open('history_log.txt', 'w') as f:
+        f.write('\n'.join(lines))
     #result='detected'
     return label_predict
 

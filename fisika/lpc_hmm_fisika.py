@@ -4,8 +4,7 @@ import pyaudio
 import scipy.io.wavfile as wav
 import pickle
 import audiolazy.lazy_lpc as method
-from hmmlearn.hmm import GaussianHMM as hmm
-#import data_processing as dp
+from datetime import date
 
 
 def initialize(inputWav):
@@ -85,7 +84,7 @@ def record(namefile):
         max_score = -float("inf")
         max_label = 0
 
-        for j in range(540):
+        for j in range(59):
             j = j + 1
 
             model = pickle.load(open("data/model_fisika/model_" + str(j) + ".pkl", 'rb'))
@@ -111,6 +110,12 @@ def record(namefile):
         #print("mean : ", mean)
 
         print("predicted data -", str(max_label), " label = ", label_predict)
+        today = date.today()
+        print("Today date is: ", today)
+        day= today
+        lines = [str(day), "predicted data -", str(max_label), " label = ", label_predict]
+        with open('history_log.txt', 'w') as f:
+            f.write('\n'.join(lines))
 
     return label_predict
 
