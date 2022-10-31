@@ -1,5 +1,5 @@
 import sys
-import os
+import subprocess
 import namegenerator
 from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUi
@@ -26,19 +26,19 @@ class AudioProc(QMainWindow):
         QMessageBox().information(self, 'Information', str(label_predict))
         QMessageBox.show(self)
 
-        if label_predict == 'Test':
+        if label_predict == 'bangun ruang':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
             subprocess.call('start ig.jpg', shell=True)
-        elif label_predict == 'Verb':
+        elif label_predict == 'luas bangun ruang':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
             subprocess.call('start ig.jpg', shell=True)
-        elif label_predict == 'Pronoun':
+        elif label_predict == 'operasi pecahan':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
             subprocess.call('start ig.jpg', shell=True)
-        elif label_predict == 'Comparison':
+        elif label_predict == 'pecahan':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
             subprocess.call('start ig.jpg', shell=True)
-        elif label_predict == 'Present Continouse Tense':
+        elif label_predict == 'perbandingan':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
             subprocess.call('start ig.jpg', shell=True)
 

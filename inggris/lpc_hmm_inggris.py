@@ -81,7 +81,7 @@ def record(namefile):
     max_score = -float("inf")
     max_label = 0
 
-    for j in range(25):
+    for j in range(54):
         j = j + 1
 
         model = pickle.load(open("data/model_english/model_" + str(j) + ".pkl", 'rb'))
@@ -92,16 +92,16 @@ def record(namefile):
             max_score = scr
             max_label = j
 
-    if (max_label >= 1) and (max_label <= 5):
-        label_predict = 'Test'
-    elif (max_label >= 6) and (max_label <= 10):
-        label_predict = 'Verb'
-    elif (max_label >= 11) and (max_label <= 15):
-        label_predict = 'Pronoun'
-    elif (max_label >= 16) and (max_label <= 20):
+    if (max_label >= 1) and (max_label <= 7):
         label_predict = 'Comparison'
-    elif (max_label >= 21) and (max_label <= 25):
+    elif (max_label >= 8) and (max_label <= 13):
+        label_predict = 'Diagnostic Test'
+    elif (max_label >= 14) and (max_label <= 29):
         label_predict = 'Present Continouse Tense'
+    elif (max_label >= 30) and (max_label <= 46):
+        label_predict = 'Pronoun'
+    elif (max_label >= 47) and (max_label <= 54):
+        label_predict = 'Final Test'
 
         #mean, freqz = dp.spectral_statistics(signal, rate)
         #print("mean : ", mean)

@@ -96,16 +96,16 @@ def record(namefile):
                 max_score = scr
                 max_label = j
 
-        if (max_label >= 1) and (max_label <= 25):
-            label_predict = 'fisika'
-        elif (max_label >= 26) and (max_label <= 50):
-            label_predict = 'matematika'
-        elif (max_label >= 51) and (max_label <= 75):
-            label_predict = 'bahasa inggris'
-        elif (max_label >= 76) and (max_label <= 100):
-            label_predict = 'bahasa inggris'
-        elif (max_label >= 101) and (max_label <= 125):
-            label_predict = 'bahasa inggris'
+        if (max_label >= 1) and (max_label <= 6):
+            label_predict = 'bumi'
+        elif (max_label >= 7) and (max_label <= 26):
+            label_predict = 'gerak'
+        elif (max_label >= 27) and (max_label <= 47):
+            label_predict = 'gerak melingkar'
+        elif (max_label >= 48) and (max_label <= 53):
+            label_predict = 'planet'
+        elif (max_label >= 54) and (max_label <= 59):
+            label_predict = 'tata surya'
 
         #mean, freqz = dp.spectral_statistics(signal, rate)
         #print("mean : ", mean)

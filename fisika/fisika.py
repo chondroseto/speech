@@ -26,19 +26,19 @@ class AudioProc(QMainWindow):
         QMessageBox().information(self, 'Information', str(label_predict))
         QMessageBox.show(self)
 
-        if label_predict == 'Test':
+        if label_predict == 'bumi':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
-            subprocess.call('start ig.jpg', shell=True)
-        elif label_predict == 'Verb':
+            subprocess.call('start ka', shell=True)
+        elif label_predict == 'gerak':
+            #os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
+            subprocess.call('start gerak.pptx', shell=True)
+        elif label_predict == 'gerak melingkar':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
             subprocess.call('start ig.jpg', shell=True)
-        elif label_predict == 'Pronoun':
-            #os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
-            subprocess.call('start ig.jpg', shell=True)
-        elif label_predict == 'Comparison':
+        elif label_predict == 'planet':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
-            subprocess.call('start ig.jpg', shell=True)
-        elif label_predict == 'Present Continouse Tense':
+            subprocess.call('start planet.pptx', shell=True)
+        elif label_predict == 'tata surya':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
             subprocess.call('start ig.jpg', shell=True)
 

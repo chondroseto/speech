@@ -1,0 +1,5 @@
+bumi (1-6)
+gerak (7-26)
+gerakmelingkar (27-47)
+planet (48-53)
+

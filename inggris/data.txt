@@ -1,2 +1,5 @@
 comparison (1-7)
 diagnostic (8-13)
+presentcontinuis tense (14-29)
+pronoun (30-46)
+final test(47-54)

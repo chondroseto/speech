@@ -1,0 +1,5 @@
+bangunruang(1-8)
+luasbangunruang(9-16)
+operasipadapecahan(17-36)
+pecahan(37-54)
+perbandingan (55-62)

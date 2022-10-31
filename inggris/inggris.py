@@ -26,21 +26,21 @@ class AudioProc(QMainWindow):
         QMessageBox().information(self, 'Information', str(label_predict))
         QMessageBox.show(self)
 
-        if label_predict == 'Test':
+        if label_predict == 'Comparison':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
-            subprocess.call('start ig.jpg', shell=True)
-        elif label_predict == 'Verb':
+            subprocess.call('start COMPARISON.pdf', shell=True)
+        elif label_predict == 'Diagnostic Test':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
-            subprocess.call('start ig.jpg', shell=True)
+            subprocess.call('start DIAGNOSTIC_TEST.pdf', shell=True)
+        elif label_predict == 'Present Continous Tense':
+            #os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
+            subprocess.call('start FINAL_TEST.pdf', shell=True)
         elif label_predict == 'Pronoun':
-            #os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
-            subprocess.call('start ig.jpg', shell=True)
-        elif label_predict == 'Comparison':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
-            subprocess.call('start ig.jpg', shell=True)
-        elif label_predict == 'Present Continouse Tense':
+            subprocess.call('start NOUN-PRONOUNS-VERB.pdf', shell=True)
+        elif label_predict == 'Final Test':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
-            subprocess.call('start ig.jpg', shell=True)
+            subprocess.call('start PRESENT_CONTINUOUS.pdf', shell=True)
 
     @pyqtSlot()
     def exitBtn_clicked(self):
