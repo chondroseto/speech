@@ -4,8 +4,7 @@ import pyaudio
 import scipy.io.wavfile as wav
 import pickle
 import audiolazy.lazy_lpc as method
-from datetime import date
-
+import datetime
 
 def initialize(inputWav):
     rate, signal = wav.read(inputWav)  # returns a wave_read object , rate: sampling frequency
@@ -82,10 +81,10 @@ def record(namefile):
     max_score = -float("inf")
     max_label = 0
 
-    for j in range(54):
+    for j in range(62):
         j = j + 1
 
-        model = pickle.load(open("data/model_english/model_" + str(j) + ".pkl", 'rb'))
+        model = pickle.load(open("inggris/model_training/model_" + str(j) + ".pkl", 'rb'))
 
         scr = model.score(lpc_refeatures)  # method score menggunakan algorithm="forward"
 
@@ -98,11 +97,12 @@ def record(namefile):
     elif (max_label >= 8) and (max_label <= 13):
         label_predict = 'Diagnostic Test'
     elif (max_label >= 14) and (max_label <= 29):
-        label_predict = 'Present Continouse Tense'
+        label_predict = 'Present Continuous Tense'
     elif (max_label >= 30) and (max_label <= 46):
         label_predict = 'Pronoun'
-    elif (max_label >= 47) and (max_label <= 54):
+    elif (max_label >= 47) and (max_label <= 62):
         label_predict = 'Final Test'
+
 
         #mean, freqz = dp.spectral_statistics(signal, rate)
         #print("mean : ", mean)
@@ -116,12 +116,9 @@ def record(namefile):
 
     #print(result)
     print("predicted data -", str(max_label), " label = ", label_predict)
-    today = date.today()
-    print("Today date is: ", today)
-    day = today
-    lines = [str(day), "predicted data -", str(max_label), " label = ", label_predict]
-    with open('history_log.txt', 'w') as f:
-        f.write('\n'.join(lines))
+    more_lines = ['\n---test---',str(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')) + ' -  predicted data - '+str(max_label)+' label = '+label_predict,'---end_test---']
+    with open('history_log.txt', 'a') as f:
+        f.write('\n'.join(more_lines))
     #result='detected'
     return label_predict
 

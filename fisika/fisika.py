@@ -1,5 +1,5 @@
 import sys
-import os
+import subprocess
 from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUi
 from PyQt5.QtCore import *

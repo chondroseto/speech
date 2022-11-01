@@ -4,7 +4,7 @@ import pyaudio
 import scipy.io.wavfile as wav
 import pickle
 import audiolazy.lazy_lpc as method
-from datetime import date
+import datetime
 
 
 def initialize(inputWav):
@@ -87,7 +87,7 @@ def record(namefile):
         for j in range(59):
             j = j + 1
 
-            model = pickle.load(open("data/model_fisika/model_" + str(j) + ".pkl", 'rb'))
+            model = pickle.load(open("fisika/model_training/model_" + str(j) + ".pkl", 'rb'))
 
             scr = model.score(lpc_refeatures)  # method score menggunakan algorithm="forward"
 
@@ -110,12 +110,11 @@ def record(namefile):
         #print("mean : ", mean)
 
         print("predicted data -", str(max_label), " label = ", label_predict)
-        today = date.today()
-        print("Today date is: ", today)
-        day= today
-        lines = [str(day), "predicted data -", str(max_label), " label = ", label_predict]
-        with open('history_log.txt', 'w') as f:
-            f.write('\n'.join(lines))
+        more_lines = ['\n---test---',
+                      str(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')) + ' -  predicted data - ' + str(
+                          max_label) + ' label = ' + label_predict, '---end_test---']
+        with open('history_log.txt', 'a') as f:
+            f.write('\n'.join(more_lines))
 
     return label_predict
 

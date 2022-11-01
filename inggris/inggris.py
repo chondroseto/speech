@@ -1,5 +1,5 @@
 import sys
-import os
+import subprocess
 import namegenerator
 from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUi
@@ -27,20 +27,20 @@ class AudioProc(QMainWindow):
         QMessageBox.show(self)
 
         if label_predict == 'Comparison':
+            subprocess.call('start Comparison.pdf', shell=True)
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
-            subprocess.call('start COMPARISON.pdf', shell=True)
         elif label_predict == 'Diagnostic Test':
+            subprocess.call('start Diagnostic_Test.pdf', shell=True)
             #os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
-            subprocess.call('start DIAGNOSTIC_TEST.pdf', shell=True)
-        elif label_predict == 'Present Continous Tense':
+        elif label_predict == 'Present Continuous Tense':
+            subprocess.call('start Present_Continuous_Tense.pdf', shell=True)
             #os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
-            subprocess.call('start FINAL_TEST.pdf', shell=True)
         elif label_predict == 'Pronoun':
+            subprocess.call('start Noun-Pronouns_Verb.pdf', shell=True)
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
-            subprocess.call('start NOUN-PRONOUNS-VERB.pdf', shell=True)
         elif label_predict == 'Final Test':
+            subprocess.call('start Final_Test.pdf', shell=True)
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
-            subprocess.call('start PRESENT_CONTINUOUS.pdf', shell=True)
 
     @pyqtSlot()
     def exitBtn_clicked(self):
