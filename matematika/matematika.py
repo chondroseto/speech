@@ -28,19 +28,19 @@ class AudioProc(QMainWindow):
 
         if label_predict == 'bangun ruang':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
-            subprocess.call('start ig.jpg', shell=True)
+            subprocess.call('start BANGUN_RUANG.mp4', shell=True)
         elif label_predict == 'luas bangun ruang':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
-            subprocess.call('start ig.jpg', shell=True)
+            subprocess.call('start LUAS_BANGUN_RUANG.mp4', shell=True)
         elif label_predict == 'operasi pecahan':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
-            subprocess.call('start ig.jpg', shell=True)
+            subprocess.call('start Operasi_pada_pecahan.ppt', shell=True)
         elif label_predict == 'pecahan':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
-            subprocess.call('start ig.jpg', shell=True)
+            subprocess.call('start Pecahan.ppt', shell=True)
         elif label_predict == 'perbandingan':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
-            subprocess.call('start ig.jpg', shell=True)
+            subprocess.call('start Perbandingan.pdf', shell=True)
 
     @pyqtSlot()
     def exitBtn_clicked(self):

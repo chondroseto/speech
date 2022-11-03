@@ -28,19 +28,22 @@ class AudioProc(QMainWindow):
 
         if label_predict == 'bumi':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
-            subprocess.call('start ka', shell=True)
+            subprocess.call('start BUMI_DAN_KESEIMBANGAN.pptx', shell=True)
         elif label_predict == 'gerak':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
             subprocess.call('start gerak.pptx', shell=True)
         elif label_predict == 'gerak melingkar':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
-            subprocess.call('start ig.jpg', shell=True)
+            subprocess.call('start gerak_melingkar_1', shell=True)
+            subprocess.call('start gerak_melingkar_2', shell=True)
+            subprocess.call('start gerak_melingkar_3', shell=True)
+            subprocess.call('start gerak_melingkar_4', shell=True)
         elif label_predict == 'planet':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
             subprocess.call('start planet.pptx', shell=True)
         elif label_predict == 'tata surya':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
-            subprocess.call('start ig.jpg', shell=True)
+            subprocess.call('start Belajar_Tata_Surya.mp4', shell=True)
 
     @pyqtSlot()
     def exitBtn_clicked(self):
