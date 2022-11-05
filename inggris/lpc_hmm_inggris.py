@@ -99,8 +99,8 @@ def record(namefile):
     elif (max_label >= 14) and (max_label <= 29):
         label_predict = 'Present Continuous Tense'
     elif (max_label >= 30) and (max_label <= 46):
-        label_predict = 'Pronoun'
-    elif (max_label >= 47) and (max_label <= 62):
+        label_predict = 'Verb'
+    elif (max_label >= 47) and (max_label <= 72):
         label_predict = 'Final Test'
 
 

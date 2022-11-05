@@ -35,8 +35,8 @@ class AudioProc(QMainWindow):
         elif label_predict == 'Present Continuous Tense':
             subprocess.call('start Present_Continuous_Tense.pdf', shell=True)
             #os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
-        elif label_predict == 'Pronoun':
-            subprocess.call('start Noun-Pronouns_Verb.pdf', shell=True)
+        elif label_predict == 'Verb':
+            subprocess.call('start Noun_Pronouns_Verb.pdf', shell=True)
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
         elif label_predict == 'Final Test':
             subprocess.call('start Final_Test.pdf', shell=True)
