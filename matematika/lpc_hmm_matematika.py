@@ -33,7 +33,7 @@ def record(namefile):
     channels = 2
     # 44100 samples per second
     sample_rate = 8000
-    record_seconds = 2
+    record_seconds = 3
     # initialize PyAudio object
     p = pyaudio.PyAudio()
     # open stream object as input & output

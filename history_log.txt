@@ -17,3 +17,9 @@
 ---test---
 2022-11-01 11:16:41 -  predicted data - 1 label = bangun ruang
 ---end_test---
+---test---
+2022-11-03 11:58:15 -  predicted data - 13 label = luas bangun ruang
+---end_test---
+---test---
+2022-11-05 08:33:52 -  predicted data - 55 label = Final Test
+---end_test---
