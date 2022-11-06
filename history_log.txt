@@ -1,0 +1,10 @@
+
+---test---
+2022-11-06 08:41:18 -  predicted data - 27 label = luas bangun ruang
+---end_test---
+---test---
+2022-11-06 08:41:45 -  predicted data - 8 label = bumi
+---end_test---
+---test---
+2022-11-06 08:42:13 -  predicted data - 62 label = Verb
+---end_test---
