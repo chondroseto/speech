@@ -8,12 +8,12 @@ class Opening(QMainWindow):
     def __init__(self):
 
         super(Opening,self).__init__()
-        loadUi('opening.ui',self)
+        loadUi('beranda.ui',self)
         self.mskBtn.clicked.connect(self.mskBtn_clicked)
 
     @pyqtSlot()
     def mskBtn_clicked(self):
-        os.system('python main.py')
+        os.system('python pilih_pelajaran.py')
 
 if __name__=='__main__':
     app=QApplication(sys.argv)

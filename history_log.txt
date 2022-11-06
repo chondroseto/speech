@@ -8,3 +8,6 @@
 ---test---
 2022-11-06 08:42:13 -  predicted data - 62 label = Verb
 ---end_test---
+---test---
+2022-11-06 16:45:51 -  predicted data - 43 label = operasi pecahan
+---end_test---

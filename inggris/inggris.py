@@ -10,11 +10,17 @@ class AudioProc(QMainWindow):
     def __init__(self):
 
         super(AudioProc,self).__init__()
-        loadUi('virtualassistant.ui',self)
+        loadUi('INGGRIS.ui',self)
 
         # Function Declaration
         self.record_btn.clicked.connect(self.record_btn_clicked)
         self.exitBtn.clicked.connect(self.exitBtn_clicked)
+
+        self.diagnostic_test_btn.clicked.connect(self.diagnostic_test_btn_clicked)
+        self.verb_btn.clicked.connect(self.verb_btn_clicked)
+        self.pct_btn.clicked.connect(self.pct_btn_clicked)
+        self.comparison_btn.clicked.connect(self.comparison_btn_clicked)
+        self.final_test_btn.clicked.connect(self.final_test_btn_clicked)
 
     @pyqtSlot()
     def record_btn_clicked(self):
@@ -28,16 +34,16 @@ class AudioProc(QMainWindow):
 
         if label_predict == 'Comparison':
             subprocess.call('start Comparison.pdf', shell=True)
-            #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
+
         elif label_predict == 'Diagnostic Test':
             subprocess.call('start Diagnostic_Test.pdf', shell=True)
-            #os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
+
         elif label_predict == 'Present Continuous Tense':
             subprocess.call('start Present_Continuous_Tense.pdf', shell=True)
-            #os.system(r'cmd /c "start C:\Users\User\Desktop\Doc1.pdf"')
+
         elif label_predict == 'Verb':
             subprocess.call('start Noun_Pronouns_Verb.pdf', shell=True)
-            #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
+
         elif label_predict == 'Final Test':
             subprocess.call('start Final_Test.pdf', shell=True)
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
@@ -45,6 +51,27 @@ class AudioProc(QMainWindow):
     @pyqtSlot()
     def exitBtn_clicked(self):
         sys.exit(app.exec_())
+
+    @pyqtSlot()
+    def diagnostic_test_btn_clicked(self):
+        subprocess.call('start Diagnostic_Test.pdf', shell=True)
+
+    @pyqtSlot()
+    def verb_btn_clicked(self):
+        subprocess.call('start Noun_Pronouns_Verb.pdf', shell=True)
+
+    @pyqtSlot()
+    def pct_btn_clicked(self):
+        subprocess.call('start Present_Continuous_Tense.pdf', shell=True)
+
+    @pyqtSlot()
+    def comparison_btn_clicked(self):
+        subprocess.call('start Comparison.pdf', shell=True)
+
+    @pyqtSlot()
+    def final_test_btn_clicked(self):
+        subprocess.call('start Final_Test.pdf', shell=True)
+
 
 if __name__=='__main__':
     app=QApplication(sys.argv)

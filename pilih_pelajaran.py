@@ -8,7 +8,7 @@ class Main(QMainWindow):
     def __init__(self):
 
         super(Main,self).__init__()
-        loadUi('main.ui',self)
+        loadUi('pilih_pelajaran.ui',self)
         self.btnFsk.clicked.connect(self.btnFsk_clicked)
         self.btnMtk.clicked.connect(self.btnMtk_clicked)
         self.btnIng.clicked.connect(self.btnIng_clicked)
