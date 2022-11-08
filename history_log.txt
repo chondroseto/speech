@@ -11,3 +11,9 @@
 ---test---
 2022-11-06 16:45:51 -  predicted data - 43 label = operasi pecahan
 ---end_test---
+---test---
+2022-11-08 19:54:32 -  predicted data - 59 label = Verb
+---end_test---
+---test---
+2022-11-08 19:55:04 -  predicted data - 44 label = Present Continuous Tense
+---end_test---

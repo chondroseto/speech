@@ -1,6 +1,6 @@
 import sys
 import subprocess
-import namegenerator
+import uuid
 from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUi
 from PyQt5.QtCore import *
@@ -27,7 +27,7 @@ class AudioProc(QMainWindow):
         QMessageBox().information(self, 'Information', 'Ready to Record')
         QMessageBox.show(self)
 
-        label_predict = new_method.record(namegenerator.gen())
+        label_predict = new_method.record(str(uuid.uuid1()))
 
         QMessageBox().information(self, 'Information', str(label_predict))
         QMessageBox.show(self)
