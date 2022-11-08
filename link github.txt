@@ -1,1 +1,4 @@
 https://github.com/chondroseto/speech.git
+
+shortcut exe
+"C:\Windows\System32\cmd.exe" /k cd C:\Users\User\PycharmProjects\speech & python beranda.py
