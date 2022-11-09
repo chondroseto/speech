@@ -1,4 +1,9 @@
 https://github.com/chondroseto/speech.git
 
-shortcut exe
+cara membuat shortcut exe di python menggunakan cmd
+-install python 3.9 di pc dan install library yang di butuhkan oleh project
+-setting environment python agar dapat di akses via cmd
+-klik kanan di dalam folder project
+-klik shortcut
+-masukan syntax dibawah ini dan sesuaikan dengan tempat projectnya berada 
 "C:\Windows\System32\cmd.exe" /k cd C:\Users\User\PycharmProjects\speech & python beranda.py
