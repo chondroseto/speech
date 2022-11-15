@@ -84,7 +84,7 @@ def record(namefile):
         max_score = -float("inf")
         max_label = 0
 
-        for j in range(56):
+        for j in range(175):
             j = j + 1
 
             model = pickle.load(open("matematika/model_training/model_ (" + str(j) + ").pkl", 'rb'))
@@ -95,15 +95,15 @@ def record(namefile):
                 max_score = scr
                 max_label = j
 
-        if (max_label >= 1) and (max_label <= 19):
+        if (max_label >= 1) and (max_label <= 39):
             label_predict = 'bangun ruang'
-        elif (max_label >= 20) and (max_label <= 38):
+        elif (max_label >= 40) and (max_label <= 78):
             label_predict = 'luas bangun ruang'
-        elif (max_label >= 39) and (max_label <= 58):
+        elif (max_label >= 79) and (max_label <= 118):
             label_predict = 'operasi pecahan'
-        elif (max_label >= 59) and (max_label <= 76):
+        elif (max_label >= 119) and (max_label <= 154):
             label_predict = 'pecahan'
-        elif (max_label >= 77) and (max_label <= 97):
+        elif (max_label >= 155) and (max_label <= 175):
             label_predict = 'perbandingan'
 
         print("predicted data -", str(max_label), " label = ", label_predict)

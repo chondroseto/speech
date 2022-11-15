@@ -81,7 +81,7 @@ def record(namefile):
     max_score = -float("inf")
     max_label = 0
 
-    for j in range(62):
+    for j in range(112):
         j = j + 1
 
         model = pickle.load(open("inggris/model_training/model_ (" + str(j) + ").pkl", 'rb'))
@@ -92,15 +92,15 @@ def record(namefile):
             max_score = scr
             max_label = j
 
-    if (max_label >= 1) and (max_label <= 19):
+    if (max_label >= 1) and (max_label <= 34):
         label_predict = 'Comparison'
-    elif (max_label >= 20) and (max_label <= 38):
+    elif (max_label >= 35) and (max_label <= 53):
         label_predict = 'Diagnostic Test'
-    elif (max_label >= 14) and (max_label <= 54):
+    elif (max_label >= 54) and (max_label <= 69):
         label_predict = 'Present Continuous Tense'
-    elif (max_label >= 55) and (max_label <= 71):
+    elif (max_label >= 70) and (max_label <= 86):
         label_predict = 'Verb'
-    elif (max_label >= 72) and (max_label <= 97):
+    elif (max_label >= 87) and (max_label <= 112):
         label_predict = 'Final Test'
 
 

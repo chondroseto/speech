@@ -20,3 +20,288 @@
 ---test---
 2022-11-09 11:23:21 -  predicted data - 59 label = Verb
 ---end_test---
+---test---
+2022-11-09 19:25:53 -  predicted data - 11 label = bumi
+---end_test---
+---test---
+2022-11-14 08:08:36 -  predicted data - 61 label = Verb
+---end_test---
+---test---
+2022-11-14 08:08:56 -  predicted data - 47 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 08:09:08 -  predicted data - 34 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-14 08:09:20 -  predicted data - 55 label = Verb
+---end_test---
+---test---
+2022-11-14 08:09:30 -  predicted data - 62 label = Verb
+---end_test---
+---test---
+2022-11-14 08:09:39 -  predicted data - 44 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 08:09:52 -  predicted data - 44 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 08:10:00 -  predicted data - 61 label = Verb
+---end_test---
+---test---
+2022-11-14 08:10:07 -  predicted data - 61 label = Verb
+---end_test---
+---test---
+2022-11-14 08:10:15 -  predicted data - 44 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 08:10:22 -  predicted data - 55 label = Verb
+---end_test---
+---test---
+2022-11-14 08:10:34 -  predicted data - 33 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-14 08:10:42 -  predicted data - 34 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-14 08:10:51 -  predicted data - 58 label = Verb
+---end_test---
+---test---
+2022-11-14 08:11:00 -  predicted data - 44 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 08:11:30 -  predicted data - 44 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 08:11:39 -  predicted data - 6 label = Comparison
+---end_test---
+---test---
+2022-11-14 08:11:48 -  predicted data - 59 label = Verb
+---end_test---
+---test---
+2022-11-14 08:11:56 -  predicted data - 61 label = Verb
+---end_test---
+---test---
+2022-11-14 08:12:04 -  predicted data - 58 label = Verb
+---end_test---
+---test---
+2022-11-14 08:12:12 -  predicted data - 33 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-14 08:12:21 -  predicted data - 44 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 08:16:22 -  predicted data - 44 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 08:16:31 -  predicted data - 55 label = Verb
+---end_test---
+---test---
+2022-11-14 08:16:41 -  predicted data - 44 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 08:16:48 -  predicted data - 44 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 08:40:25 -  predicted data - 17 label = Comparison
+---end_test---
+---test---
+2022-11-14 08:40:34 -  predicted data - 49 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-14 08:40:43 -  predicted data - 17 label = Comparison
+---end_test---
+---test---
+2022-11-14 08:40:51 -  predicted data - 61 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 08:41:02 -  predicted data - 53 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-14 08:41:14 -  predicted data - 26 label = Comparison
+---end_test---
+---test---
+2022-11-14 08:41:24 -  predicted data - 17 label = Comparison
+---end_test---
+---test---
+2022-11-14 08:41:36 -  predicted data - 26 label = Comparison
+---end_test---
+---test---
+2022-11-14 08:41:47 -  predicted data - 6 label = Comparison
+---end_test---
+---test---
+2022-11-14 08:41:57 -  predicted data - 46 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-14 08:42:06 -  predicted data - 49 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-14 08:42:16 -  predicted data - 61 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 08:42:26 -  predicted data - 35 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-14 08:42:35 -  predicted data - 53 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-14 08:42:44 -  predicted data - 17 label = Comparison
+---end_test---
+---test---
+2022-11-14 08:42:53 -  predicted data - 34 label = Comparison
+---end_test---
+---test---
+2022-11-14 08:43:02 -  predicted data - 17 label = Comparison
+---end_test---
+---test---
+2022-11-14 08:53:05 -  predicted data - 59 label = Verb
+---end_test---
+---test---
+2022-11-14 08:53:17 -  predicted data - 44 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 08:53:26 -  predicted data - 95 label = Final Test
+---end_test---
+---test---
+2022-11-14 08:53:35 -  predicted data - 34 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-14 08:53:43 -  predicted data - 79 label = Final Test
+---end_test---
+---test---
+2022-11-14 08:53:53 -  predicted data - 96 label = Final Test
+---end_test---
+---test---
+2022-11-14 08:54:02 -  predicted data - 47 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 08:54:13 -  predicted data - 44 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 08:54:24 -  predicted data - 44 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 08:54:33 -  predicted data - 55 label = Verb
+---end_test---
+---test---
+2022-11-14 08:54:42 -  predicted data - 79 label = Final Test
+---end_test---
+---test---
+2022-11-14 08:54:51 -  predicted data - 96 label = Final Test
+---end_test---
+---test---
+2022-11-14 08:55:02 -  predicted data - 59 label = Verb
+---end_test---
+---test---
+2022-11-14 08:55:11 -  predicted data - 62 label = Verb
+---end_test---
+---test---
+2022-11-14 08:55:21 -  predicted data - 47 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 09:02:42 -  predicted data - 75 label = Verb
+---end_test---
+---test---
+2022-11-14 09:02:49 -  predicted data - 75 label = Verb
+---end_test---
+---test---
+2022-11-14 09:02:59 -  predicted data - 100 label = Final Test
+---end_test---
+---test---
+2022-11-14 09:03:08 -  predicted data - 93 label = Final Test
+---end_test---
+---test---
+2022-11-14 09:03:35 -  predicted data - 112 label = Final Test
+---end_test---
+---test---
+2022-11-14 09:03:44 -  predicted data - 86 label = Verb
+---end_test---
+---test---
+2022-11-14 09:04:04 -  predicted data - 61 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 09:04:14 -  predicted data - 61 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 09:04:29 -  predicted data - 71 label = Verb
+---end_test---
+---test---
+2022-11-14 09:04:39 -  predicted data - 112 label = Final Test
+---end_test---
+---test---
+2022-11-14 09:04:48 -  predicted data - 61 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-14 09:04:57 -  predicted data - 87 label = Final Test
+---end_test---
+---test---
+2022-11-14 09:05:06 -  predicted data - 93 label = Final Test
+---end_test---
+---test---
+2022-11-14 09:05:15 -  predicted data - 77 label = Verb
+---end_test---
+---test---
+2022-11-14 09:05:23 -  predicted data - 75 label = Verb
+---end_test---
+---test---
+2022-11-14 09:05:33 -  predicted data - 75 label = Verb
+---end_test---
+---test---
+2022-11-14 09:05:41 -  predicted data - 75 label = Verb
+---end_test---
+---test---
+2022-11-14 09:05:53 -  predicted data - 75 label = Verb
+---end_test---
+---test---
+2022-11-14 09:07:34 -  predicted data - 82 label = perbandingan
+---end_test---
+---test---
+2022-11-14 09:07:58 -  predicted data - 82 label = perbandingan
+---end_test---
+---test---
+2022-11-14 09:08:09 -  predicted data - 86 label = perbandingan
+---end_test---
+---test---
+2022-11-14 09:08:17 -  predicted data - 86 label = perbandingan
+---end_test---
+---test---
+2022-11-14 09:08:38 -  predicted data - 65 label = pecahan
+---end_test---
+---test---
+2022-11-14 09:08:48 -  predicted data - 27 label = luas bangun ruang
+---end_test---
+---test---
+2022-11-14 09:08:57 -  predicted data - 67 label = pecahan
+---end_test---
+---test---
+2022-11-14 09:09:05 -  predicted data - 44 label = operasi pecahan
+---end_test---
+---test---
+2022-11-14 09:10:00 -  predicted data - 47 label = gerak melingkar
+---end_test---
+---test---
+2022-11-14 09:11:51 -  predicted data - 67 label = planet
+---end_test---
+---test---
+2022-11-14 09:11:58 -  predicted data - 80 label = planet
+---end_test---
+---test---
+2022-11-14 09:12:09 -  predicted data - 66 label = planet
+---end_test---
+---test---
+2022-11-14 09:12:18 -  predicted data - 84 label = tata surya
+---end_test---
+---test---
+2022-11-14 09:12:27 -  predicted data - 84 label = tata surya
+---end_test---
+---test---
+2022-11-14 09:12:37 -  predicted data - 2 label = bumi
+---end_test---
+---test---
+2022-11-14 09:12:46 -  predicted data - 28 label = gerak
+---end_test---
+---test---
+2022-11-14 09:12:55 -  predicted data - 28 label = gerak
+---end_test---
+---test---
+2022-11-14 09:13:03 -  predicted data - 47 label = gerak melingkar
+---end_test---
