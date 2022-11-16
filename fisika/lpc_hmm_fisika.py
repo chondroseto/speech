@@ -84,7 +84,7 @@ def record(namefile):
         max_score = -float("inf")
         max_label = 0
 
-        for j in range(96):
+        for j in range(59):
             j = j + 1
 
             model = pickle.load(open("fisika/model_training/model_ (" + str(j) + ").pkl", 'rb'))
@@ -99,10 +99,10 @@ def record(namefile):
             label_predict = 'bumi'
         elif (max_label >= 21) and (max_label <= 40):
             label_predict = 'gerak'
-        elif (max_label >= 41) and (max_label <= 61):
-            label_predict = 'gerak melingkar'
-        elif (max_label >= 62) and (max_label <= 80):
+        elif (max_label >= 41) and (max_label <= 59):
             label_predict = 'planet'
+        elif (max_label >= 62) and (max_label <= 80):
+            label_predict = 'gerak melingkar'
         elif (max_label >= 81) and (max_label <= 96):
             label_predict = 'tata surya'
 

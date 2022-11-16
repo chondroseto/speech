@@ -305,3 +305,54 @@
 ---test---
 2022-11-14 09:13:03 -  predicted data - 47 label = gerak melingkar
 ---end_test---
+---test---
+2022-11-16 17:27:36 -  predicted data - 23 label = gerak
+---end_test---
+---test---
+2022-11-16 17:32:05 -  predicted data - 33 label = gerak
+---end_test---
+---test---
+2022-11-16 17:32:24 -  predicted data - 11 label = bumi
+---end_test---
+---test---
+2022-11-16 17:32:45 -  predicted data - 34 label = gerak
+---end_test---
+---test---
+2022-11-16 17:33:05 -  predicted data - 46 label = planet
+---end_test---
+---test---
+2022-11-16 17:33:35 -  predicted data - 55 label = planet
+---end_test---
+---test---
+2022-11-16 17:34:03 -  predicted data - 42 label = planet
+---end_test---
+---test---
+2022-11-16 17:34:43 -  predicted data - 24 label = gerak
+---end_test---
+---test---
+2022-11-16 17:34:55 -  predicted data - 24 label = gerak
+---end_test---
+---test---
+2022-11-16 17:35:06 -  predicted data - 42 label = planet
+---end_test---
+---test---
+2022-11-16 17:49:40 -  predicted data - 71 label = pecahan
+---end_test---
+---test---
+2022-11-16 17:49:49 -  predicted data - 61 label = pecahan
+---end_test---
+---test---
+2022-11-16 17:50:05 -  predicted data - 60 label = pecahan
+---end_test---
+---test---
+2022-11-16 17:53:28 -  predicted data - 33 label = bangun ruang
+---end_test---
+---test---
+2022-11-16 17:53:50 -  predicted data - 79 label = perbandingan
+---end_test---
+---test---
+2022-11-16 17:59:37 -  predicted data - 34 label = Comparison
+---end_test---
+---test---
+2022-11-16 18:00:15 -  predicted data - 30 label = Comparison
+---end_test---

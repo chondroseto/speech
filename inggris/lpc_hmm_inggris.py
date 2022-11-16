@@ -81,7 +81,7 @@ def record(namefile):
     max_score = -float("inf")
     max_label = 0
 
-    for j in range(112):
+    for j in range(69):
         j = j + 1
 
         model = pickle.load(open("inggris/model_training/model_ (" + str(j) + ").pkl", 'rb'))
