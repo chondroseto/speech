@@ -3,5 +3,5 @@ bangunruang(1-39)
 pecahan(40-75)
 perbandingan (76-96)
 
-luasbangunruang(40-78)
-operasipadapecahan(79-118)
+luasbangunruang(97-135)
+operasipadapecahan(136-175)

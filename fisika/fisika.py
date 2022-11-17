@@ -62,12 +62,12 @@ class AudioProc(QMainWindow):
     @pyqtSlot()
     def gerak_melingkar_btn_clicked(self):
         subprocess.call('start gerak_melingkar_1', shell=True)
-        time.sleep(10)
-        subprocess.call('start gerak_melingkar_2', shell=True)
-        time.sleep(10)
-        subprocess.call('start gerak_melingkar_3', shell=True)
-        time.sleep(10)
-        subprocess.call('start gerak_melingkar_4', shell=True)
+        #time.sleep(10)
+        #subprocess.call('start gerak_melingkar_2', shell=True)
+        #time.sleep(10)
+        #subprocess.call('start gerak_melingkar_3', shell=True)
+        #time.sleep(10)
+        #subprocess.call('start gerak_melingkar_4', shell=True)
 
     @pyqtSlot()
     def bumi_btn_clicked(self):

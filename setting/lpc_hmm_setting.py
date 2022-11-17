@@ -135,18 +135,11 @@ def lpc_hmm_uji_one(fname):
 
         print(fname)
 
-        if fname.find('fisika')>-1:
-            label_actual = 'fisika'
-        elif fname.find('matematika') > -1:
-            label_actual = 'matematika'
-        elif fname.find('inggris') > -1:
-            label_actual = 'bahasa inggris'
-        else:
-            label_actual = 'undetected'
 
-        print('actual label = ',label_actual)
 
         emphasizedSignal, signal, rate= preEmphasis(fname)
+        print(signal)
+        print(rate)
         filt = method.lpc(emphasizedSignal,8)
         lpc_features = filt.numerator[1:]
         lpc_refeatures = np.reshape(lpc_features, (-1, 1))  # reshape reshape to matrix

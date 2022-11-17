@@ -356,3 +356,12 @@
 ---test---
 2022-11-16 18:00:15 -  predicted data - 30 label = Comparison
 ---end_test---
+---test---
+2022-11-17 12:19:20 -  predicted data - 41 label = planet
+---end_test---
+---test---
+2022-11-17 12:20:27 -  predicted data - 3 label = bangun ruang
+---end_test---
+---test---
+2022-11-17 12:20:51 -  predicted data - 26 label = Comparison
+---end_test---
