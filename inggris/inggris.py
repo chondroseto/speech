@@ -32,20 +32,20 @@ class AudioProc(QMainWindow):
         QMessageBox().information(self, 'Information', str(label_predict))
         QMessageBox.show(self)
 
-       # if label_predict == 'Comparison':
-        #    subprocess.call('start Comparison.pdf', shell=True)
+        if label_predict == 'Comparison':
+            subprocess.call('start Comparison.pdf', shell=True)
 
-       # elif label_predict == 'Diagnostic Test':
-       #     subprocess.call('start Diagnostic_Test.pdf', shell=True)
+        elif label_predict == 'Diagnostic Test':
+            subprocess.call('start Diagnostic_Test.pdf', shell=True)
 
-       # elif label_predict == 'Present Continuous Tense':
-       #     subprocess.call('start Present_Continuous_Tense.pdf', shell=True)
+        elif label_predict == 'Present Continuous Tense':
+            subprocess.call('start Present_Continuous_Tense.pdf', shell=True)
 
-       # elif label_predict == 'pronoun':
-       #     subprocess.call('start Noun_Pronouns_Verb.pdf', shell=True)
+        elif label_predict == 'pronoun':
+            subprocess.call('start Noun_Pronouns_Verb.pdf', shell=True)
 
-       # elif label_predict == 'Final Test':
-        #    subprocess.call('start Final_Test.pdf', shell=True)
+        elif label_predict == 'Final Test':
+            subprocess.call('start Final_Test.pdf', shell=True)
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
 
     @pyqtSlot()

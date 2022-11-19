@@ -33,11 +33,11 @@ class AudioProc(QMainWindow):
         QMessageBox().information(self, 'Information', str(label_predict))
         QMessageBox.show(self)
 
-       # if label_predict == 'bumi':
-        #    subprocess.call('start BUMI_DAN_KESEIMBANGAN.pptx', shell=True)
-       # elif label_predict == 'gerak':
-        #    subprocess.call('start gerak.pptx', shell=True)
-       # elif label_predict == 'gerak melingkar':
+        if label_predict == 'bumi':
+            subprocess.call('start BUMI_DAN_KESEIMBANGAN.pptx', shell=True)
+        elif label_predict == 'gerak':
+            subprocess.call('start gerak.pptx', shell=True)
+        elif label_predict == 'gerak melingkar':
        #     subprocess.call('start gerak_melingkar_1', shell=True)
             #time.sleep(10)
             #subprocess.call('start gerak_melingkar_2', shell=True)
@@ -45,11 +45,11 @@ class AudioProc(QMainWindow):
             #subprocess.call('start gerak_melingkar_3', shell=True)
             #time.sleep(10)
             #subprocess.call('start gerak_melingkar_4', shell=True)
-       # elif label_predict == 'planet':
-       #     subprocess.call('start planet.pptx', shell=True)
-       # elif label_predict == 'tata surya':
+        elif label_predict == 'planet':
+            subprocess.call('start planet.pptx', shell=True)
+        elif label_predict == 'tata surya':
             #os.system(r'cmd /c "start C:\Users\User\Desktop\tiket.pdf"')
-       #     subprocess.call('start Belajar_Tata_Surya.mp4', shell=True)
+            subprocess.call('start Belajar_Tata_Surya.mp4', shell=True)
 
     @pyqtSlot()
     def exitBtn_clicked(self):
