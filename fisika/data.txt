@@ -1,7 +1,7 @@
-bumi (1-20)
-gerak (21-40)
-planet (41-59)
+bumi (1-29)
+gerak (30-57)
+planet (58-72)
 
-gerakmelingkar (60-80)
-tata surya (81-96)
+gerakmelingkar (73-91)
+tata surya (92-102)
 

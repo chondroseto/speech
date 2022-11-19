@@ -365,3 +365,123 @@
 ---test---
 2022-11-17 12:20:51 -  predicted data - 26 label = Comparison
 ---end_test---
+---test---
+2022-11-19 10:36:35 -  predicted data - 15 label = bumi
+---end_test---
+---test---
+2022-11-19 11:20:58 -  predicted data - 27 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-19 11:21:06 -  predicted data - 23 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-19 11:21:17 -  predicted data - 27 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-19 11:21:39 -  predicted data - 27 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-19 11:22:00 -  predicted data - 23 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-19 11:22:47 -  predicted data - 75 label = gerak melingkar
+---end_test---
+---test---
+2022-11-19 11:24:34 -  predicted data - 36 label = gerak
+---end_test---
+---test---
+2022-11-19 11:24:43 -  predicted data - 20 label = bumi
+---end_test---
+---test---
+2022-11-19 11:24:50 -  predicted data - 32 label = gerak
+---end_test---
+---test---
+2022-11-19 11:24:56 -  predicted data - 68 label = planet
+---end_test---
+---test---
+2022-11-19 11:25:02 -  predicted data - 65 label = planet
+---end_test---
+---test---
+2022-11-19 11:25:09 -  predicted data - 9 label = bumi
+---end_test---
+---test---
+2022-11-19 11:25:15 -  predicted data - 76 label = gerak melingkar
+---end_test---
+---test---
+2022-11-19 11:25:21 -  predicted data - 47 label = gerak
+---end_test---
+---test---
+2022-11-19 11:25:27 -  predicted data - 23 label = bumi
+---end_test---
+---test---
+2022-11-19 11:26:01 -  predicted data - 68 label = luas bangun ruang
+---end_test---
+---test---
+2022-11-19 11:26:08 -  predicted data - 8 label = bangun ruang
+---end_test---
+---test---
+2022-11-19 11:26:14 -  predicted data - 73 label = luas bangun ruang
+---end_test---
+---test---
+2022-11-19 11:26:20 -  predicted data - 58 label = perbandingan
+---end_test---
+---test---
+2022-11-19 11:26:27 -  predicted data - 103 label = operasi pecahan
+---end_test---
+---test---
+2022-11-19 11:26:33 -  predicted data - 23 label = bangun ruang
+---end_test---
+---test---
+2022-11-19 11:26:39 -  predicted data - 75 label = luas bangun ruang
+---end_test---
+---test---
+2022-11-19 11:26:45 -  predicted data - 40 label = pecahan
+---end_test---
+---test---
+2022-11-19 11:26:53 -  predicted data - 49 label = pecahan
+---end_test---
+---test---
+2022-11-19 11:28:03 -  predicted data - 48 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-19 11:28:11 -  predicted data - 48 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-19 11:28:20 -  predicted data - 39 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-19 11:28:27 -  predicted data - 23 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-19 11:28:35 -  predicted data - 26 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-19 11:28:44 -  predicted data - 23 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-19 11:37:27 -  predicted data - 47 label = pecahan
+---end_test---
+---test---
+2022-11-19 11:37:36 -  predicted data - 68 label = luas bangun ruang
+---end_test---
+---test---
+2022-11-19 11:37:42 -  predicted data - 60 label = perbandingan
+---end_test---
+---test---
+2022-11-19 11:37:51 -  predicted data - 19 label = bangun ruang
+---end_test---
+---test---
+2022-11-19 11:37:58 -  predicted data - 74 label = luas bangun ruang
+---end_test---
+---test---
+2022-11-19 11:38:12 -  predicted data - 12 label = bangun ruang
+---end_test---
+---test---
+2022-11-19 11:38:22 -  predicted data - 56 label = perbandingan
+---end_test---
+---test---
+2022-11-19 11:38:29 -  predicted data - 56 label = perbandingan
+---end_test---
+---test---
+2022-11-19 11:38:39 -  predicted data - 47 label = pecahan
+---end_test---

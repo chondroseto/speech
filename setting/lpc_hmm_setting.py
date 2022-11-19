@@ -23,7 +23,7 @@ def preEmphasis(wav):
 
 def lpc_hmm_train():
     print('========================================train========================================')
-    for i in range(18):
+    for i in range(24):
         i = i + 1
         audio = 'data_training/_ (' + str(i) + ').wav'
 
@@ -40,29 +40,18 @@ def lpc_hmm_train():
     return lpc_features
 
 def lpc_hmm_uji_all():
-    fisika_match = 0
-    matematika_match = 0
-    inggris_match = 0
-    data_uji_per_class = 20
+    match = 0
     scr_value = []
     print('========================================test all========================================')
-    for i in range(120):
+    for i in range(20):
         i = i + 1
 
-        audio = 'code/umum/data_uji/_ (' + str(i) + ').wav'
+        audio = 'data_uji/fisika/bumi/_ (' + str(i) + ').wav'
 
         print(audio)
 
-        if (i >= 1) and (i <= 25):
-            label_actual = 'fisika'
-        elif (i >= 26) and (i <= 50):
-            label_actual = 'matematika'
-        elif (i >= 51) and (i <= 75):
-            label_actual = 'bahasa inggris'
-        elif (i >= 76) and (i <= 100):
-            label_actual = 'bahasa inggris'
-        elif (i >= 101) and (i <= 125):
-            label_actual = 'bahasa inggris'
+        if (i >= 1) and (i <= 20):
+            label_actual = 'bumi'
 
 
         print('actual label = ',label_actual)
@@ -75,10 +64,10 @@ def lpc_hmm_uji_all():
         max_score = -float("inf")
         max_label = 0
 
-        for j in range(540):
+        for j in range(96):
             j = j + 1
 
-            model = pickle.load(open("code/umum/model_hmm/model_" + str(j) + ".pkl", 'rb'))
+            model = pickle.load(open("model/fisika/model_ (" + str(j) + ").pkl", 'rb'))
 
             scr = model.score(lpc_refeatures) #method score menggunakan algorithm="forward"
             scr_value.append(scr)
@@ -86,45 +75,32 @@ def lpc_hmm_uji_all():
                 max_score = scr
                 max_label = j
 
-        if (max_label >= 1) and (max_label <= 25):
-            label_predict = 'fisika'
-        elif (max_label >= 26) and (max_label <= 50):
-            label_predict = 'matematika'
-        elif (max_label >= 51) and (max_label <= 75):
-            label_predict = 'bahasa inggris'
-        elif (max_label >= 76) and (max_label <= 100):
-            label_predict = 'bahasa inggris'
-        elif (max_label >= 101) and (max_label <= 125):
-            label_predict = 'bahasa inggris'
+        if (max_label >= 1) and (max_label <= 20):
+            label_predict = 'bumi'
+        elif (max_label >= 21) and (max_label <= 40):
+            label_predict = 'gerak'
+        elif (max_label >= 41) and (max_label <= 59):
+            label_predict = 'planet'
+        elif (max_label >= 60) and (max_label <= 80):
+            label_predict = 'gerak melingkar'
+        elif (max_label >= 81) and (max_label <= 96):
+            label_predict = 'tata surya'
 
         if label_actual==label_predict:
             status = 'detected'
-            if label_predict == 'fisika':
-                fisika_match= fisika_match+1
-            elif label_predict == 'matematika':
-                matematika_match = matematika_match + 1
-            elif label_predict == 'bahasa inggris':
-                inggris_match = inggris_match + 1
-            elif label_predict == 'bahasa inggris':
-                inggris_match = inggris_match + 1
-            elif label_predict == 'bahasa inggris':
-                inggris_match = inggris_match + 1
+            if label_predict == 'bumi':
+                match= match+1
         else:
             status = 'undetected'
 
-        #print("predicted data -", str(max_label), " label = ", label_predict," status = ",status)
+        print("predicted data -", str(max_label), " label = ", label_predict," status = ",status)
         #mean, freqz = dp.spectral_statistics(emphasizedSignal, rate)
         #print("LPCF : ", lpc_refeatures)
         #print("Mean : ", mean)
         #print("Score : ", max_score)
         #print("all score : ",scr_value)
 
-        result = 'Detection Persentase rate= '+\
-                 '% \n Fisika = '+str((fisika_match+matematika_match+inggris_match)/(data_uji_per_class*3)*100)+\
-                 '% \n Fisika = '+str((fisika_match/data_uji_per_class)*100)+\
-                 '%\n Matematika = '+str((matematika_match/data_uji_per_class)*100)+\
-                 '%\n Bahasa Inggris = '+str((inggris_match/data_uji_per_class)*100)+\
-                 '%\n tes = '+str((fisika_match+matematika_match+inggris_match)/(data_uji_per_class*3)*100)+'%'
+        result = 'match = '+str(match)
     return result
 
 def lpc_hmm_uji_one(fname):
@@ -134,8 +110,6 @@ def lpc_hmm_uji_one(fname):
         i = i + 1
 
         print(fname)
-
-
 
         emphasizedSignal, signal, rate= preEmphasis(fname)
         print(signal)
@@ -147,10 +121,10 @@ def lpc_hmm_uji_one(fname):
         max_score = -float("inf")
         max_label = 0
 
-        for j in range(540):
+        for j in range(96):
             j = j + 1
 
-            model = pickle.load(open("code/umum/model_hmm/model_"+ str(j) + ".pkl", 'rb'))
+            model = pickle.load(open("model/fisika/model_ ("+ str(j) + ").pkl", 'rb'))
 
             scr = model.score(lpc_refeatures) #method score menggunakan algorithm="forward"
             scr_value.append(scr)
@@ -158,37 +132,25 @@ def lpc_hmm_uji_one(fname):
                 max_score = scr
                 max_label = j
 
-        if (max_label>=1)and(max_label<=25):
-            label_predict = 'fisika'
-        elif (max_label>=26)and(max_label<=50):
-            label_predict = 'matematika'
-        elif (max_label>=51)and(max_label<=75):
-            label_predict = 'bahasa inggris'
-        elif (max_label>=76)and(max_label<=100):
-            label_predict = 'bahasa inggris'
-        elif (max_label>=101)and(max_label<=125):
-            label_predict = 'bahasa inggris'
-
-        if label_actual==label_predict:
-            status = 'detected'
-        else:
-            status = 'undetected'
+        if (max_label >= 1) and (max_label <= 20):
+            label_predict = 'bumi'
+        elif (max_label >= 21) and (max_label <= 40):
+            label_predict = 'gerak'
+        elif (max_label >= 41) and (max_label <= 59):
+            label_predict = 'planet'
+        elif (max_label >= 60) and (max_label <= 80):
+            label_predict = 'gerak melingkar'
+        elif (max_label >= 81) and (max_label <= 96):
+            label_predict = 'tata surya'
 
 
-        if signal <= 780:
-            result = 'file suara kurang jelas suaranya sehingga tidak dapat di deteksi'
-            label_predict = ""
-        elif label_actual == 'undetected':
-            result = 'data suara tidak ada pada database'
-            label_predict = ''
-        else:
-            print("predicted data -", str(max_label), " label = ", label_predict, " status = ", status)
-            result = "predicted data -" + str(max_label) + " label = " + label_predict + " status = " + status
-            #print("mean : ", mean)
-            print("Max Score : ", max_score)
-            # print("All Score : ",scr_value)
 
-    return result,label_actual,label_predict,status
+        print("predicted data -", str(max_label), " label = ", label_predict, " status = ")
+        result = "predicted data -" + str(max_label) + " label = " + label_predict + " status = "
+        print("Max Score : ", max_score)
+        # print("All Score : ",scr_value)
+
+    return result,label_predict
 
 def record(namefile):
     print('========================================record========================================')

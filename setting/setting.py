@@ -91,7 +91,7 @@ class AudioProc(QMainWindow):
 
     @pyqtSlot()
     def test_btn_clicked(self):
-        fname, unused = QFileDialog.getOpenFileName(self, 'Open file','C:\\Users\\chondroseto\\PycharmProjects\\assist\\code\\umum',"Audio files (*.wav)")
+        fname, unused = QFileDialog.getOpenFileName(self, 'Open file','C:\\Users\\User\\PycharmProjects\\speech',"Audio files (*.wav)")
         if len(fname)>0:
             QMessageBox().information(self, 'Information', 'Load File Success')
             QMessageBox.show(self)
@@ -101,24 +101,9 @@ class AudioProc(QMainWindow):
             QMessageBox().information(self, 'Information', str(result))
             QMessageBox.show(self)
             #status='undetected'
-            if len(label_predict)>1:
-                self.result_label.setText(label_predict)
-            else:
-                self.result_label.setText("undetected")
 
             #label_predict = ""
 
-            if status=='detected':
-                if label_predict == 'fisika':
-                    os.system(r'cmd /c "start C:\Users\chondroseto\Desktop\LinkedIn"')
-                elif label_predict == 'matematika':
-                    os.system(r'cmd /c "start C:\Users\chondroseto\Desktop\Whatsapp"')
-                elif label_predict == 'bahasa inggris':
-                    os.system(r'cmd /c "start C:\Users\chondroseto\Desktop\Gmail"')
-                elif label_predict == 'bahasa inggris':
-                    os.system(r'cmd /c "start C:\Users\chondroseto\Desktop\Gmail"')
-                elif label_predict == 'bahasa inggris':
-                    os.system(r'cmd /c "start C:\Users\chondroseto\Desktop\Gmail"')
 
     @pyqtSlot()
     def app_btn_clicked(self):

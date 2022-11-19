@@ -1,7 +1,7 @@
-bangunruang(1-39)
+bangunruang(1-23)
 
-pecahan(40-75)
-perbandingan (76-96)
+pecahan(24-52)
+perbandingan (53-67)
 
-luasbangunruang(97-135)
-operasipadapecahan(136-175)
+luasbangunruang(68-81)
+operasipadapecahan(82-105)
