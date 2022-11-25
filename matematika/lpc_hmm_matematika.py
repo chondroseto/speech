@@ -61,11 +61,11 @@ def record(namefile):
             label_predict = 'bangun ruang'
         elif (max_label >= 24) and (max_label <= 52):
             label_predict = 'pecahan'
-        elif (max_label >= 53) and (max_label <= 67):
+        elif (max_label >= 53) and (max_label <= 71):
             label_predict = 'perbandingan'
-        elif (max_label >= 68) and (max_label <= 81):
+        elif (max_label >= 72) and (max_label <= 85):
             label_predict = 'luas bangun ruang'
-        elif (max_label >= 82) and (max_label <= 105):
+        elif (max_label >= 86) and (max_label <= 109):
             label_predict = 'operasi pecahan'
 
         print("predicted data -", str(max_label), " label = ", label_predict)

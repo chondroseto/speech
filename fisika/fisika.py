@@ -38,7 +38,7 @@ class AudioProc(QMainWindow):
         elif label_predict == 'gerak':
             subprocess.call('start gerak.pptx', shell=True)
         elif label_predict == 'gerak melingkar':
-       #     subprocess.call('start gerak_melingkar_1', shell=True)
+            subprocess.call('start gerak_melingkar_1', shell=True)
             #time.sleep(10)
             #subprocess.call('start gerak_melingkar_2', shell=True)
             #time.sleep(10)

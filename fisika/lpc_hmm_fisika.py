@@ -61,11 +61,11 @@ def record(namefile):
             label_predict = 'bumi'
         elif (max_label >= 30) and (max_label <= 57):
             label_predict = 'gerak'
-        elif (max_label >= 58) and (max_label <= 72):
+        elif (max_label >= 58) and (max_label <= 78):
             label_predict = 'planet'
-        elif (max_label >= 73) and (max_label <= 91):
+        elif (max_label >= 79) and (max_label <= 97):
             label_predict = 'gerak melingkar'
-        elif (max_label >= 92) and (max_label <= 102):
+        elif (max_label >= 98) and (max_label <= 114):
             label_predict = 'tata surya'
 
         #mean, freqz = dp.spectral_statistics(signal, rate)

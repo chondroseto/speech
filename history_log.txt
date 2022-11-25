@@ -485,3 +485,54 @@
 ---test---
 2022-11-19 11:38:39 -  predicted data - 47 label = pecahan
 ---end_test---
+---test---
+2022-11-25 21:11:40 -  predicted data - 83 label = luas bangun ruang
+---end_test---
+---test---
+2022-11-25 21:11:50 -  predicted data - 78 label = luas bangun ruang
+---end_test---
+---test---
+2022-11-25 21:11:58 -  predicted data - 35 label = pecahan
+---end_test---
+---test---
+2022-11-25 21:12:53 -  predicted data - 103 label = operasi pecahan
+---end_test---
+---test---
+2022-11-25 21:13:05 -  predicted data - 74 label = luas bangun ruang
+---end_test---
+---test---
+2022-11-25 21:13:15 -  predicted data - 77 label = luas bangun ruang
+---end_test---
+---test---
+2022-11-25 21:13:24 -  predicted data - 4 label = bangun ruang
+---end_test---
+---test---
+2022-11-25 21:13:33 -  predicted data - 21 label = bangun ruang
+---end_test---
+---test---
+2022-11-25 21:13:42 -  predicted data - 76 label = luas bangun ruang
+---end_test---
+---test---
+2022-11-25 21:13:50 -  predicted data - 4 label = bangun ruang
+---end_test---
+---test---
+2022-11-25 21:14:00 -  predicted data - 74 label = luas bangun ruang
+---end_test---
+---test---
+2022-11-25 21:14:08 -  predicted data - 31 label = pecahan
+---end_test---
+---test---
+2022-11-25 21:14:45 -  predicted data - 23 label = bumi
+---end_test---
+---test---
+2022-11-25 21:14:54 -  predicted data - 27 label = bumi
+---end_test---
+---test---
+2022-11-25 21:15:02 -  predicted data - 71 label = planet
+---end_test---
+---test---
+2022-11-25 21:15:13 -  predicted data - 68 label = planet
+---end_test---
+---test---
+2022-11-25 21:15:23 -  predicted data - 86 label = gerak melingkar
+---end_test---

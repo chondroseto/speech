@@ -1,8 +1,7 @@
 comparison (1-22)
-diagnostic (23-31)
+diagnostic (23-37)
 
-verb (32-61)
+presentcontinuis tense (38-57)
+verb (58-90)
 
-
-final test(62-76)
-presentcontinuis tense (77-96)
+final test(91-111)

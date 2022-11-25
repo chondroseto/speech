@@ -1,7 +1,7 @@
 bumi (1-29)
 gerak (30-57)
-planet (58-72)
+planet (58-78)
 
-gerakmelingkar (73-91)
-tata surya (92-102)
+gerakmelingkar (79-97)
+tata surya (98-114)
 

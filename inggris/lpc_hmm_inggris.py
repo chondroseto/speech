@@ -55,13 +55,13 @@ def record(namefile):
 
     if (max_label >= 1) and (max_label <= 22):
         label_predict = 'Comparison'
-    elif (max_label >= 23) and (max_label <= 31):
+    elif (max_label >= 23) and (max_label <= 37):
         label_predict = 'Diagnostic Test'
-    elif (max_label >= 32) and (max_label <= 61):
+    elif (max_label >= 38) and (max_label <= 57):
         label_predict = 'Present Continuous Tense'
-    elif (max_label >= 62) and (max_label <= 76):
+    elif (max_label >= 58) and (max_label <= 90):
         label_predict = 'pronoun'
-    elif (max_label >= 77) and (max_label <= 96):
+    elif (max_label >= 91) and (max_label <= 111):
         label_predict = 'Final Test'
 
 
