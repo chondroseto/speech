@@ -46,7 +46,7 @@ def record(namefile):
         max_score = -float("inf")
         max_label = 0
 
-        for j in range(102):
+        for j in range(94):
             j = j + 1
 
             model = pickle.load(open("fisika/model_training/model_ (" + str(j) + ").pkl", 'rb'))
@@ -57,15 +57,15 @@ def record(namefile):
                 max_score = scr
                 max_label = j
 
-        if (max_label >= 1) and (max_label <= 29):
+        if (max_label >= 1) and (max_label <= 22):
             label_predict = 'bumi'
-        elif (max_label >= 30) and (max_label <= 57):
+        elif (max_label >= 23) and (max_label <= 43):
             label_predict = 'gerak'
-        elif (max_label >= 58) and (max_label <= 78):
+        elif (max_label >= 44) and (max_label <= 58):
             label_predict = 'planet'
-        elif (max_label >= 79) and (max_label <= 97):
+        elif (max_label >= 59) and (max_label <= 77):
             label_predict = 'gerak melingkar'
-        elif (max_label >= 98) and (max_label <= 114):
+        elif (max_label >= 78) and (max_label <= 94):
             label_predict = 'tata surya'
 
         #mean, freqz = dp.spectral_statistics(signal, rate)
