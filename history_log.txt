@@ -536,3 +536,72 @@
 ---test---
 2022-11-25 21:15:23 -  predicted data - 86 label = gerak melingkar
 ---end_test---
+---test---
+2022-11-28 22:10:05 -  predicted data - 82 label = tata surya
+---end_test---
+---test---
+2022-11-28 22:10:14 -  predicted data - 82 label = tata surya
+---end_test---
+---test---
+2022-11-28 22:10:22 -  predicted data - 82 label = tata surya
+---end_test---
+---test---
+2022-11-28 22:10:31 -  predicted data - 82 label = tata surya
+---end_test---
+---test---
+2022-11-28 22:10:39 -  predicted data - 82 label = tata surya
+---end_test---
+---test---
+2022-11-28 22:10:47 -  predicted data - 82 label = tata surya
+---end_test---
+---test---
+2022-11-28 22:11:10 -  predicted data - 52 label = pecahan
+---end_test---
+---test---
+2022-11-28 22:11:19 -  predicted data - 52 label = pecahan
+---end_test---
+---test---
+2022-11-28 22:11:27 -  predicted data - 52 label = pecahan
+---end_test---
+---test---
+2022-11-28 22:11:36 -  predicted data - 52 label = pecahan
+---end_test---
+---test---
+2022-11-28 22:11:51 -  predicted data - 52 label = pecahan
+---end_test---
+---test---
+2022-11-28 22:13:00 -  predicted data - 43 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-28 22:13:11 -  predicted data - 43 label = Present Continuous Tense
+---end_test---
+---test---
+2022-11-28 22:13:42 -  predicted data - 88 label = pronoun
+---end_test---
+---test---
+2022-11-28 22:13:55 -  predicted data - 27 label = Diagnostic Test
+---end_test---
+---test---
+2022-11-28 22:14:21 -  predicted data - 2 label = bumi
+---end_test---
+---test---
+2022-11-28 22:14:30 -  predicted data - 49 label = planet
+---end_test---
+---test---
+2022-11-28 22:14:51 -  predicted data - 84 label = tata surya
+---end_test---
+---test---
+2022-11-28 22:16:00 -  predicted data - 45 label = planet
+---end_test---
+---test---
+2022-11-28 22:16:10 -  predicted data - 21 label = bumi
+---end_test---
+---test---
+2022-11-28 22:16:24 -  predicted data - 24 label = gerak
+---end_test---
+---test---
+2022-11-28 22:16:35 -  predicted data - 12 label = bumi
+---end_test---
+---test---
+2022-11-28 22:16:48 -  predicted data - 24 label = gerak
+---end_test---

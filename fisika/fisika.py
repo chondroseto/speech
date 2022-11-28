@@ -38,13 +38,7 @@ class AudioProc(QMainWindow):
         elif label_predict == 'gerak':
             subprocess.call('start gerak.pptx', shell=True)
         elif label_predict == 'gerak melingkar':
-            subprocess.call('start gerak_melingkar_1', shell=True)
-            #time.sleep(10)
-            #subprocess.call('start gerak_melingkar_2', shell=True)
-            #time.sleep(10)
-            #subprocess.call('start gerak_melingkar_3', shell=True)
-            #time.sleep(10)
-            #subprocess.call('start gerak_melingkar_4', shell=True)
+            subprocess.call('start gerak_melingkar', shell=True)
         elif label_predict == 'planet':
             subprocess.call('start planet.pptx', shell=True)
         elif label_predict == 'tata surya':
@@ -61,13 +55,7 @@ class AudioProc(QMainWindow):
 
     @pyqtSlot()
     def gerak_melingkar_btn_clicked(self):
-        subprocess.call('start gerak_melingkar_1', shell=True)
-        #time.sleep(10)
-        #subprocess.call('start gerak_melingkar_2', shell=True)
-        #time.sleep(10)
-        #subprocess.call('start gerak_melingkar_3', shell=True)
-        #time.sleep(10)
-        #subprocess.call('start gerak_melingkar_4', shell=True)
+        subprocess.call('start gerak_melingkar', shell=True)
 
     @pyqtSlot()
     def bumi_btn_clicked(self):
