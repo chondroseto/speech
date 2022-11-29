@@ -55,7 +55,7 @@ class AudioProc(QMainWindow):
 
     @pyqtSlot()
     def gerak_melingkar_btn_clicked(self):
-        subprocess.call('start gerak_melingkar', shell=True)
+        subprocess.call('start gerak_melingkar.mp4', shell=True)
 
     @pyqtSlot()
     def bumi_btn_clicked(self):
