@@ -23,7 +23,7 @@ def preEmphasis(wav):
 
 def lpc_hmm_train():
     print('========================================train========================================')
-    for i in range(17):
+    for i in range(21):
         i = i + 1
         audio = 'data_training/_ (' + str(i) + ').wav'
 
